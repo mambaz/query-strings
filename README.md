@@ -1,23 +1,30 @@
-# query-strings
+# `query-strings` URL Query String Appender
 
-Npm package - The query string commonly includes fields added to a base URL by a Web browser or other client application
+A Node.js package for appending query parameters to URLs.
 
 ## Installation
 
-Installation is easiest through npm:
+Install the package via npm:
 
-`npm install query-strings --save`
+```bash
+npm install query-strings --save
+```
 
 ## Usage
 
 ```js
-    var $ = require('query-strings');
-    //url = 'http://www.google.com',
-    //params.test1 = 'hello';
-    //params.test2 = 'world';
-    var result = $.queryString(url, params);
-    console.log(result);
-    // http://www.google.com?test1=hello&test2=world    
+const { queryString } = require('query-strings');
+
+// Example usage:
+const url = 'http://www.example.com';
+const params = {
+    test1: 'hello',
+    test2: 'world'
+};
+const result = queryString(url, params);
+console.log(result);
+// Output: http://www.example.com?test1=hello&test2=world
+  
 
 ```
 

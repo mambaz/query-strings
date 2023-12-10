@@ -1,7 +1,7 @@
 {
   "name": "query-strings",
-  "version": "0.0.1",
-  "description": "The query string commonly includes fields added to a base URL by a Web browser or other client application",
+  "version": "0.1.0",
+  "description": "A Node.js package for appending query parameters to URLs. This package provides a 'queryString' function that takes a URL string and an object containing key-value pairs of parameters to add. It returns the updated URL with the appended query parameters.",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
@@ -10,8 +10,8 @@
     "check-valid-url": "0.0.2"
   },
   "devDependencies": {
-    "mocha": "^3.1.2",
-    "chai": "^3.5.0"
+    "chai": "^3.5.0",
+    "mocha": "^10.2.0"
   },
   "repository": {
     "type": "git",
